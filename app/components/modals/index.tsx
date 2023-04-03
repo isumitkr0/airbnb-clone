@@ -68,8 +68,8 @@ const Modal: React.FC<ModalProps> = ({
     <>
       <div
         className="
-          fixed
-          inset-0
+          fixed 
+          inset-0 
           z-50 
           flex 
           items-center 
@@ -77,16 +77,20 @@ const Modal: React.FC<ModalProps> = ({
           overflow-y-auto 
           overflow-x-hidden 
           bg-neutral-800/70 
-          outline-none 
+          outline-none
           focus:outline-none"
       >
         <div
           className="
             relative 
-            mx-auto my-6 
-            h-full w-full 
-            md:h-auto md:w-2/3 
-            lg:h-auto lg:w-1/2 
+            mx-auto
+            my-6
+            h-full
+            w-full
+            md:h-auto
+            md:w-3/6 
+            lg:h-auto 
+            lg:w-3/6
             xl:w-2/5"
         >
           {/* CONTENT */}
@@ -100,13 +104,16 @@ const Modal: React.FC<ModalProps> = ({
           >
             <div
               className="
-                translate 
-                relative 
-                flex 
-                h-full w-full 
+                translate
+                relative
+                flex
+                h-full
+                w-full 
                 flex-col 
-                rounded-lg border-0 
-                bg-white shadow-lg 
+                rounded-lg 
+                border-0 
+              bg-white 
+                shadow-lg 
                 outline-none 
                 focus:outline-none 
                 md:h-auto 
@@ -154,6 +161,7 @@ const Modal: React.FC<ModalProps> = ({
                     onClick={handleSubmit}
                   />
                 </div>
+                {footer}
               </div>
             </div>
           </div>
